@@ -1,8 +1,6 @@
 # TimmyBot
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
-This Bot is developed and maintained by
+This Bot is developed and maintained by:
 
-TimmyTrademark
-
-DooJayu
+|<img height='100' width='100' src='https://avatars3.githubusercontent.com/u/48699905?v=4'>|
