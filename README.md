@@ -3,4 +3,4 @@
 
 This Bot is developed and maintained by:
 
-|<img height='100' width='100' src='https://avatars3.githubusercontent.com/u/48699905?v=4'>|
+| <img height='100' width='100' src='https://avatars3.githubusercontent.com/u/48699905?v=4'> |
