@@ -1,5 +1,8 @@
 # TimmyBot
 
+This is a Discord Bot for practice, please excuse all code that is unorganized and not functioning,
+Thank You!
+
 ### This Bot is developed and maintained by:
 
 | Owner | Contributer |
