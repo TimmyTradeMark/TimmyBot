@@ -14,7 +14,10 @@ class Fun(commands.Cog):
     #Commands
     @commands.command(aliases=['p', 'Ping'])
     async def ping(self, ctx):
-        await ctx.send(f'Ping: {round(self.client.latency * 1000)}ms')
+        # await ctx.send(f'Ping: {round(self.client.latency * 1000)}ms')
+        make_embed = discord.Embed() # make the variable "make_embed" into an Embed object from the Discord package
+        make_embed.add_field(name="Ping: ", value=(f"{round(self.client.latency * 1000)}ms"), inline=True) # Name parameter is the header of the content, value is the content
+        await ctx.send(embed=make_embed) # embed= is needed to let Discord know that you are gonna send an embed
     
     @commands.command()
     async def insult(self, ctx, user:discord.User):
