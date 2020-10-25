@@ -11,7 +11,7 @@ class Fun(commands.Cog):
     async def on_ready(self):
         print('This bot is now online.')
     #Commands
-    @commands.command()
+    @commands.command(aliases=['p', 'Ping'])
     async def ping(self, ctx):
         await ctx.send(f'Ping: {round(self.client.latency * 1000)}ms')
     
