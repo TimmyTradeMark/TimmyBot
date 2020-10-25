@@ -9,6 +9,7 @@ class Fun(commands.Cog):
     #Events
     @commands.Cog.listener()
     async def on_ready(self):
+        await self.client.change_presence(status=discord.Status.idle, activity=discord.Game('Bot status here'))
         print('This bot is now online.')
     #Commands
     @commands.command(aliases=['p', 'Ping'])
