@@ -19,6 +19,11 @@ class Fun(commands.Cog):
     async def insult(self, ctx, user:discord.User):
         insult = ['Fuck you!', 'Hey fuckface, get a life.', 'I hope you die.', 'Dumb fucking slut', 'you are a stupid fucking bitch', 'shut the fuck up', 'SHUT THE FUCK UP!', 'Dumb whore', 'Stupid whore']
         await ctx.send(f'{user.mention} {random.choice(insult)}')
-
+        
+    @commands.command(aliases=['8ball', 'test'])
+    async def _8ball(self, ctx, *, question):
+            responses = ['It is certain.', 'It is decidedly so.', 'Without a doubt', 'Yes - definitely.', 'You may rely on it.', 'As I see it, yes.', 'Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', 'Dont count on it.', 'My reply is no.', 'My soucres is no.', 'Outlook not so good.', 'Very doubtful.']
+            await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
+            
 def setup(client):
     client.add_cog(Fun(client))
